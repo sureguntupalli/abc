@@ -11,6 +11,17 @@
   <name>webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
+  
+  <distributionManagement>
+   <repository>
+      <id>releases</id>
+      <url>http://192.168.137.1:8081/nexus/content/repositories/releases/</url>
+   </repository>
+   <snapshotRepository>
+      <id>snapshots</id>
+      <url>http://192.168.137.1:8081/nexus/content/repositories/snapshots/</url>
+   </snapshotRepository>
+  </distributionManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
